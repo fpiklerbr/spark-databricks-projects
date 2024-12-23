@@ -15,7 +15,8 @@ Welcome to my Python and SQL portfolio! This repository showcases a collection o
 ---
 
 ## Python and PySpark: RDD Examples
-This section explores **Resilient Distributed Datasets (RDDs)** in Spark and demonstrates various transformations and actions.
+This section explores **Resilient Distributed Datasets (RDDs)** in Spark and demonstrates various transformations and actions.  
+[View Example Code](https://github.com/fpiklerbr/spark-databricks-projects/blob/main/scripts/legacy_rdd_spark_code_examples.ipynb)
 
 ### Key Sections
 - **RDD Creation**  
@@ -35,7 +36,8 @@ This section explores **Resilient Distributed Datasets (RDDs)** in Spark and dem
 ---
 
 ## Spark SQL: DataFrame and SQL Queries
-This section covers the use of **DataFrames** and **Spark SQL** for structured data processing.
+This section covers the use of **DataFrames** and **Spark SQL** for structured data processing.  
+[View Example Code](https://github.com/fpiklerbr/spark-databricks-projects/blob/main/scripts/spark_df_sparksql_examples.ipynb)
 
 ### Key Sections
 - **DataFrame Operations**  
@@ -52,7 +54,10 @@ This section covers the use of **DataFrames** and **Spark SQL** for structured d
 ---
 
 ## Spark Structured Streaming Example
-In addition to batch processing with RDDs and DataFrames, this repository also includes an example of **real-time data processing** using Spark Structured Streaming. The streaming code:
+In addition to batch processing with RDDs and DataFrames, this repository also includes an example of **real-time data processing** using Spark Structured Streaming.  
+[View Example Code](https://github.com/fpiklerbr/spark-databricks-projects/blob/main/scripts/spark_streaming_examples.ipynb)
+
+The streaming code:
 
 - **Monitors** a directory (e.g., `../resources/logs`) for new log files.  
 - **Parses** each log line using regular expressions to extract fields such as host, timestamp, request method, and status.  
@@ -64,7 +69,8 @@ This example demonstrates how Spark’s Structured Streaming API can be used to 
 ---
 
 ## Fetching and Processing Exchange Rates
-This section demonstrates a practical use case of fetching and processing foreign exchange (FX) rates using Python and Spark.
+This section demonstrates a practical use case of fetching and processing foreign exchange (FX) rates using Python and Spark.  
+[View Example Code](https://github.com/fpiklerbr/spark-databricks-projects/blob/main/scripts/import_fx_rates.ipynb)
 
 ### Key Features
 - **Data Retrieval**  
