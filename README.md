@@ -8,8 +8,9 @@ Welcome to my Python and SQL portfolio! This repository showcases a collection o
 1. [Python and PySpark: RDD Examples](#python-and-pyspark-rdd-examples)  
 2. [Spark SQL: DataFrame and SQL Queries](#spark-sql-dataframe-and-sql-queries)  
 3. [Spark Structured Streaming Example](#spark-structured-streaming-example)  
-4. [Techniques and Tools](#techniques-and-tools)  
-5. [How to Run the Notebooks](#how-to-run-the-notebooks)  
+4. [Fetching and Processing Exchange Rates](#fetching-and-processing-exchange-rates)  
+5. [Techniques and Tools](#techniques-and-tools)  
+6. [How to Run the Notebooks](#how-to-run-the-notebooks)  
 
 ---
 
@@ -59,6 +60,28 @@ In addition to batch processing with RDDs and DataFrames, this repository also i
 - **Outputs** the running counts to the console continuously until the stream is terminated.  
 
 This example demonstrates how Spark’s Structured Streaming API can be used to handle continuous data ingestion while applying transformations and aggregations on the fly.
+
+---
+
+## Fetching and Processing Exchange Rates
+This section demonstrates a practical use case of fetching and processing foreign exchange (FX) rates using Python and Spark.
+
+### Key Features
+- **Data Retrieval**  
+  - Utilizes the European Central Bank's (ECB) API to fetch historical and daily exchange rates in CSV format.
+
+- **Data Processing**  
+  - Processes the raw exchange rate data using **Pandas** for initial cleaning and filtering.
+  - Converts the filtered data into a Spark DataFrame for further transformations and distributed processing.
+
+- **Database Integration**  
+  - Stores the processed FX rates into a **PostgreSQL** database, ensuring data persistence and enabling querying of exchange rates for analytics.
+
+- **Metadata Management**  
+  - Tracks the last processed date in a metadata table, ensuring efficient incremental updates.
+  - Logs success and failure status for each run, along with error messages, to provide traceability.
+
+This code highlights the combination of REST APIs, data manipulation using Pandas, distributed data processing with Spark, and relational database integration using PostgreSQL.
 
 ---
 
